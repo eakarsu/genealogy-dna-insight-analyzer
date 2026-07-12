@@ -1,0 +1,30 @@
+{
+  "id": "genealogy-dna-insight-analyzer",
+  "title": "Genealogy Dna Insight Analyzer App",
+  "industry": "Nonprofit, Community & Religion",
+  "industryId": "nonprofit-community-religion",
+  "specialization": "Genealogy Dna Insight Analyzer",
+  "sourcePlatformGroup": "nonprofit-community-platform",
+  "sources": [
+    "AIChurchMosqueTempleManagement",
+    "AIDreamJournalAnalyzer",
+    "AIGenealogyDNAInsightAnalyzer",
+    "AIGenealogyResearcher"
+  ],
+  "featureCount": 246,
+  "candidateFeatureCount": 271,
+  "eliminatedSimilarFeatures": 25,
+  "evidenceCount": 508,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 3,
+    "seededTables": 38,
+    "seededRows": 588
+  },
+  "visibleFeatureCount": 59,
+  "featureVisibilityMode": "seeded-or-ai"
+}
