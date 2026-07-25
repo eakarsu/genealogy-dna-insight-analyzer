@@ -11,12 +11,12 @@
     "AIGenealogyDNAInsightAnalyzer",
     "AIGenealogyResearcher"
   ],
-  "featureCount": 257,
-  "candidateFeatureCount": 283,
-  "eliminatedSimilarFeatures": 26,
-  "evidenceCount": 538,
-  "aiPageCount": 0,
-  "sourceAIPageCount": 0,
+  "featureCount": 273,
+  "candidateFeatureCount": 298,
+  "eliminatedSimilarFeatures": 25,
+  "evidenceCount": 596,
+  "aiPageCount": 44,
+  "sourceAIPageCount": 44,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
@@ -25,6 +25,6 @@
     "seededTables": 38,
     "seededRows": 588
   },
-  "visibleFeatureCount": 59,
+  "visibleFeatureCount": 94,
   "featureVisibilityMode": "seeded-or-ai"
 }

@@ -245,10 +245,12 @@
     "canonicalKey": "ai generate topic",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai-generate-topics"
+      "/ai-generate-topics",
+      "/sermons?tool=ai-generate-topics"
     ],
     "sourceProjects": [
       "AIChurchMosqueTempleManagement"
@@ -257,6 +259,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Sermons.jsx:1",
+        "route": "/sermons?tool=ai-generate-topics",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -461,11 +470,13 @@
     "canonicalKey": "ai result",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
       "/AIResults",
-      "/ai-results"
+      "/ai-results",
+      "/ai-results?tool=ai-results"
     ],
     "sourceProjects": [
       "AIChurchMosqueTempleManagement"
@@ -474,6 +485,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AIResults.jsx:1",
+        "route": "/ai-results?tool=ai-results",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -562,10 +580,12 @@
     "canonicalKey": "ai summarize",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/:id/ai-summarize"
+      "/:id/ai-summarize",
+      "/sermons?tool=ai-summarize"
     ],
     "sourceProjects": [
       "AIChurchMosqueTempleManagement"
@@ -574,6 +594,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Sermons.jsx:1",
+        "route": "/sermons?tool=ai-summarize",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -588,10 +615,12 @@
     "canonicalKey": "ai thank you",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/ai-thank-you"
+      "/ai-thank-you",
+      "/donations?tool=ai-thank-you"
     ],
     "sourceProjects": [
       "AIChurchMosqueTempleManagement"
@@ -600,6 +629,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Donations.jsx:1",
+        "route": "/donations?tool=ai-thank-you",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -640,9 +676,11 @@
     "canonicalKey": "analyze dream",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=analyze-dream",
       "/analyze-dream"
     ],
     "sourceProjects": [
@@ -652,6 +690,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=analyze-dream",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -692,6 +737,7 @@
     "canonicalKey": "announcement",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -705,6 +751,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Announcements.jsx:1",
+        "route": "/announcements",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -805,6 +858,32 @@
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/reports.js:56",
         "route": "/attendance.csv",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Attendance Tracking",
+    "canonicalKey": "attendance tracking",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/attendance"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Attendance.jsx:1",
+        "route": "/attendance",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -1028,9 +1107,11 @@
     "canonicalKey": "cbt suggestion",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=cbt-suggestions",
       "/cbt-suggestions"
     ],
     "sourceProjects": [
@@ -1040,6 +1121,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=cbt-suggestions",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -1764,15 +1852,43 @@
     ]
   },
   {
+    "name": "Counseling Sessions",
+    "canonicalKey": "counseling session",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/counseling"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Counseling.jsx:1",
+        "route": "/counseling",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Cousin Discovery",
     "canonicalKey": "cousin discovery",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/cousin-discovery",
+      "/ai-structured-tools?tool=cousin-discovery",
       "/cousin-discovery"
     ],
     "sourceProjects": [
@@ -1782,6 +1898,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=cousin-discovery",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -2086,9 +2209,11 @@
     "canonicalKey": "detect pattern",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=detect-patterns",
       "/detect-patterns"
     ],
     "sourceProjects": [
@@ -2098,6 +2223,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=detect-patterns",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -2138,11 +2270,13 @@
     "canonicalKey": "anomaly detection dna",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/dna-anomaly-detection",
+      "/ai-structured-tools?tool=dna-anomaly-detection",
       "/dna-anomaly-detection"
     ],
     "sourceProjects": [
@@ -2152,6 +2286,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=dna-anomaly-detection",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -2173,11 +2314,13 @@
     "canonicalKey": "dna interpret match",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/dna-match-interpret",
+      "/ai-structured-tools?tool=dna-match-interpret",
       "/dna-match-interpret"
     ],
     "sourceProjects": [
@@ -2187,6 +2330,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=dna-match-interpret",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -2354,9 +2504,11 @@
     "canonicalKey": "donation insight",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=donation-insights",
       "/donation-insights"
     ],
     "sourceProjects": [
@@ -2366,6 +2518,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:15",
+        "route": "/ai-tools?tool=donation-insights",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -2462,10 +2621,12 @@
     "canonicalKey": "dream entry",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
-      "/DreamEntries"
+      "/DreamEntries",
+      "/dreams"
     ],
     "sourceProjects": [
       "AIDreamJournalAnalyzer"
@@ -2474,6 +2635,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/DreamEntries.jsx:1",
+        "route": "/dreams",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -2572,6 +2740,58 @@
         "sourceProject": "AIDreamJournalAnalyzer",
         "path": "frontend/src/pages/DreamSharing.jsx",
         "route": "/DreamSharing",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Dream Sharing Community",
+    "canonicalKey": "community dream sharing",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/dream-sharing"
+    ],
+    "sourceProjects": [
+      "AIDreamJournalAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/DreamSharing.jsx:1",
+        "route": "/dream-sharing",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Dream Symbols Dictionary",
+    "canonicalKey": "dictionary dream symbol",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/symbols"
+    ],
+    "sourceProjects": [
+      "AIDreamJournalAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/Symbols.jsx:1",
+        "route": "/symbols",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -2699,9 +2919,11 @@
     "canonicalKey": "emotion trajectory",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=emotion-trajectory",
       "/emotion-trajectory"
     ],
     "sourceProjects": [
@@ -2711,6 +2933,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=emotion-trajectory",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -2918,11 +3147,13 @@
     "canonicalKey": "deep dive ethnicity",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/ethnicity-deep-dive",
+      "/ai-structured-tools?tool=ethnicity-deep-dive",
       "/ethnicity-deep-dive"
     ],
     "sourceProjects": [
@@ -2932,6 +3163,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=ethnicity-deep-dive",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -2991,13 +3229,41 @@
     ]
   },
   {
+    "name": "Event Coordination",
+    "canonicalKey": "coordination event",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/events"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Events.jsx:1",
+        "route": "/events",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Event Planner",
     "canonicalKey": "event planner",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=event-planner",
       "/event-planner"
     ],
     "sourceProjects": [
@@ -3007,6 +3273,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:42",
+        "route": "/ai-tools?tool=event-planner",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -3293,6 +3566,32 @@
     ]
   },
   {
+    "name": "Facility Management",
+    "canonicalKey": "facility",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/facilities"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Facilities.jsx:1",
+        "route": "/facilities",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Facility Optimizer",
     "canonicalKey": "facility optimizer",
     "aliases": [],
@@ -3314,6 +3613,32 @@
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/ai.js:432",
         "route": "/facility-optimizer",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Facility Utilization Optimizer",
+    "canonicalKey": "facility optimizer utilization",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-tools?tool=facility-optimizer"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:86",
+        "route": "/ai-tools?tool=facility-optimizer",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -4583,10 +4908,12 @@
     "canonicalKey": "generate receipt",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
-      "/:id/generate-receipt"
+      "/:id/generate-receipt",
+      "/donations?tool=generate-receipt"
     ],
     "sourceProjects": [
       "AIChurchMosqueTempleManagement"
@@ -4595,6 +4922,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Donations.jsx:1",
+        "route": "/donations?tool=generate-receipt",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -4928,11 +5262,13 @@
     "canonicalKey": "explain health risk",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/health-risk-explain",
+      "/ai-structured-tools?tool=health-risk-explain",
       "/health-risk-explain"
     ],
     "sourceProjects": [
@@ -4942,6 +5278,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=health-risk-explain",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -4996,6 +5339,135 @@
         "sourceProject": "AIGenealogyResearcher",
         "path": "frontend/src/pages/Dashboard.js:22",
         "route": "historical-records",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "History",
+    "canonicalKey": "history",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai-analysis?tool=history",
+      "/history"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement",
+      "AIDreamJournalAnalyzer",
+      "AIGenealogyDNAInsightAnalyzer",
+      "AIGenealogyResearcher"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_ai_giving_pattern_fraud_anomaly_detection.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_ai_live_translation_for_multilingual_congregati.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_ai_personalized_devotional_content_generation.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_ai_prayer_request_triage_and_routing.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_ai_sermon_transcription_clip_generation_for_soc.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_direct_chms_api_client_planning_center_church_c.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_export_reporting_for_tax_receipt_generation.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_livestream_giving_page_integration.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_mobile_app_for_members.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_no_shift_swap_workflow_on_volunteer_scheduling.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "backend/routes/gap_notification_routes_exist_but_no_sms_push_delivery.js:134",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "backend/routes/ai.js:240",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "backend/routes/aiCenter.js:215",
+        "route": "/history",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIGenealogyResearcher",
+        "path": "backend/routes/conflictResolution.js:68",
+        "route": "/history",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -5175,9 +5647,11 @@
     "canonicalKey": "interpret symbol",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=interpret-symbol",
       "/interpret-symbol"
     ],
     "sourceProjects": [
@@ -5187,6 +5661,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=interpret-symbol",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -5253,9 +5734,11 @@
     "canonicalKey": "journal summary",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=journal-summary",
       "/journal-summary"
     ],
     "sourceProjects": [
@@ -5265,6 +5748,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=journal-summary",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -5338,9 +5828,11 @@
     "canonicalKey": "correlation lifestyle",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-analysis?tool=lifestyle-correlation",
       "/lifestyle-correlation"
     ],
     "sourceProjects": [
@@ -5350,6 +5842,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/AIAnalysis.jsx:1",
+        "route": "/ai-analysis?tool=lifestyle-correlation",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -5442,6 +5941,7 @@
     "canonicalKey": "dream lucid",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -5455,6 +5955,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/LucidDreams.jsx:1",
+        "route": "/lucid-dreams",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIDreamJournalAnalyzer",
@@ -5699,9 +6206,11 @@
     "canonicalKey": "engagement member",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=member-engagement",
       "/member-engagement"
     ],
     "sourceProjects": [
@@ -5712,10 +6221,43 @@
     ],
     "evidence": [
       {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:33",
+        "route": "/ai-tools?tool=member-engagement",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/ai.js:160",
         "route": "/member-engagement",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Member Management",
+    "canonicalKey": "member",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/members"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Members.jsx:1",
+        "route": "/members",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -5825,11 +6367,13 @@
     "canonicalKey": "migration story",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/ai-center/migration-story",
+      "/ai-structured-tools?tool=migration-story",
       "/migration-story"
     ],
     "sourceProjects": [
@@ -5839,6 +6383,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIGenealogyDNAInsightAnalyzer",
+        "path": "frontend/src/pages/AIStructuredTools.jsx:1",
+        "route": "/ai-structured-tools?tool=migration-story",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIGenealogyDNAInsightAnalyzer",
@@ -6606,13 +7157,41 @@
     ]
   },
   {
+    "name": "Outreach Programs",
+    "canonicalKey": "outreach program",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/outreach"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Outreach.jsx:1",
+        "route": "/outreach",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Outreach Strategy",
     "canonicalKey": "outreach strategy",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=outreach-strategy",
       "/outreach-strategy"
     ],
     "sourceProjects": [
@@ -6622,6 +7201,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:52",
+        "route": "/ai-tools?tool=outreach-strategy",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -6994,6 +7580,32 @@
     ]
   },
   {
+    "name": "Prayer Categorization",
+    "canonicalKey": "categorization prayer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-tools?tool=prayer-categorize"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:78",
+        "route": "/ai-tools?tool=prayer-categorize",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Prayer Categorize",
     "canonicalKey": "categorize prayer",
     "aliases": [],
@@ -7024,9 +7636,11 @@
     "canonicalKey": "guidance prayer",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=prayer-guidance",
       "/prayer-guidance"
     ],
     "sourceProjects": [
@@ -7037,10 +7651,43 @@
     ],
     "evidence": [
       {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:24",
+        "route": "/ai-tools?tool=prayer-guidance",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/ai.js:120",
         "route": "/prayer-guidance",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Prayer Requests",
+    "canonicalKey": "prayer request",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/prayers"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Prayers.jsx:1",
+        "route": "/prayers",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -7642,9 +8289,11 @@
     "canonicalKey": "analyzer sermon",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai-tools?tool=sermon-analyzer",
       "/sermon-analyzer"
     ],
     "sourceProjects": [
@@ -7654,6 +8303,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:5",
+        "route": "/ai-tools?tool=sermon-analyzer",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "api",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -7685,6 +8341,32 @@
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/ai.js:295",
         "route": "/sermon-qa",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Sermon Qa Bot",
+    "canonicalKey": "bot qa sermon",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-tools?tool=sermon-qa"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:61",
+        "route": "/ai-tools?tool=sermon-qa",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
@@ -7838,6 +8520,32 @@
     ]
   },
   {
+    "name": "Sleep Quality Tracker",
+    "canonicalKey": "quality sleep tracker",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/sleep-quality"
+    ],
+    "sourceProjects": [
+      "AIDreamJournalAnalyzer"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIDreamJournalAnalyzer",
+        "path": "frontend/src/pages/SleepQuality.jsx:1",
+        "route": "/sleep-quality",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
     "name": "Sleep Recommendations",
     "canonicalKey": "recommendation sleep",
     "aliases": [],
@@ -7894,6 +8602,7 @@
     "canonicalKey": "group small",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "page"
     ],
     "routes": [
@@ -7907,6 +8616,13 @@
       "nonprofit-community-religion/genealogy-dna-insight-analyzer"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/SmallGroups.jsx:1",
+        "route": "/small-groups",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      },
       {
         "kind": "page",
         "sourceProject": "AIChurchMosqueTempleManagement",
@@ -8660,6 +9376,58 @@
         "sourceProject": "AIChurchMosqueTempleManagement",
         "path": "backend/routes/ai.js:347",
         "route": "/volunteer-burnout",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Volunteer Burnout Alert",
+    "canonicalKey": "alert burnout volunteer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai-tools?tool=volunteer-burnout"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/AITools.jsx:70",
+        "route": "/ai-tools?tool=volunteer-burnout",
+        "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+      }
+    ]
+  },
+  {
+    "name": "Volunteer Scheduling",
+    "canonicalKey": "scheduling volunteer",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/volunteers"
+    ],
+    "sourceProjects": [
+      "AIChurchMosqueTempleManagement"
+    ],
+    "consolidatedFromApps": [
+      "nonprofit-community-religion/genealogy-dna-insight-analyzer"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIChurchMosqueTempleManagement",
+        "path": "frontend/src/pages/Volunteers.jsx:1",
+        "route": "/volunteers",
         "originApp": "nonprofit-community-religion/genealogy-dna-insight-analyzer"
       }
     ]
