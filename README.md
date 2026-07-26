@@ -3,7 +3,7 @@
 Industry: **Nonprofit, Community & Religion**  
 Specialization: **Genealogy Dna Insight Analyzer**
 
-This standalone application consolidates source-backed capabilities into 273 optimized features, including 94 visible data-backed or AI-enabled views. Its public demo SQLite database contains 588 sanitized source rows across 38 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 273 optimized features, including all 273 source-backed feature views. Its public demo SQLite database contains 588 sanitized source rows across 38 imported tables and 120 operational workflow records.
 
 ## Run locally
 
